@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <title>My Portfolio</title>
+</head>
+
+<body onload="onPageLoad()">
+
+  <div id="loader"></div>
+  <div class="navbar">
+    <ul>
+      <li>
+        <a href="#about">About me</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact me</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="portfolio" style="display:none;" class="animate-bottom">
+    <div id="about">
+      <div class="section banner">
+        <img src="pp.jpg" alt="Profile">
+        <div class="heading">
+          <p>Full.</p>
+          <p>Stack.</p>
+          <p>Developer.</p>
+          <button onclick="window.location.href ='#skills'">My Skills
+            <span class="arrow-down"></span>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-me">
+          <span style="text-decoration:underline;">ABOUT ME</span>
+          <p style="font-size:0.6em;">
+            <i>
+              Hi there! I'm Pramod, a 23 year old software engineer who is passionate about building and scaling web applications. The
+              fixation started during my final year of engineering when i worked as an intern at Green Mobiles(An e-commerce
+              company) as a software developer and helped them build and maintain their web apps. Over the past few months
+              i've been fortunate enough to help out an NGO in making a more than satisfactory website for them. Apart from
+              these, in order to strengthen and sharpen my skills i regularly take up courses on Udemy and do mini projects
+              to keep myself updated with the Industry. In my normal time, what i love to do is to play chess, badminton
+              and go on a lot of treks! If you'd like to connect with me, be sure to find me on Facebook, LinkedIn or just
+              drop a message in the contact section. I'd definetly love to hear from you!
+            </i>
+          </p>
+          <a href="#skills" style="font-size:1em;">
+            <i class="fa fa-angle-double-down fa-1x" aria-hidden="true" style="color:black;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="skills" class="about-me">
+      <p style="text-decoration: underline;">SKILLS</p>
+      <div class="cards">
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>HTML5</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/html.png" alt="HTML5">
+          </div>
+          <div class="skill-score">
+            <span style="width: 90%">90/100</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>CSS3</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/css.png" alt="CSS3">
+          </div>
+          <div class="skill-score">
+            <span style="width: 90%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>Javascript</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/javascript.png" alt="javascript">
+          </div>
+          <div class="skill-score">
+            <span style="width: 90%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>JQuery</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/jquery.png" alt="jquery">
+          </div>
+          <div class="skill-score">
+            <span style="width: 70%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>mongo db</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/mongodb.png" alt="mongodb">
+          </div>
+          <div class="skill-score">
+            <span style="width: 60%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>Express JS</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/express.png" alt="expressjs">
+          </div>
+          <div class="skill-score">
+            <span style="width: 80%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>Angular</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/angular.png" alt="angular">
+          </div>
+          <div class="skill-score">
+            <span style="width: 80%"></span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="card-heading">
+            <i>Node JS</i>
+          </div>
+          <div class="card-logo">
+            <img src="./images/nodejs.png" alt="nodejs">
+          </div>
+          <div class="skill-score">
+            <span style="width: 70%"></span>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div id="projects" class="about-me">
+      <p style="text-decoration: underline;">PROJECTS</p>
+      <div class="project-list">
+        <div class="project-card">
+          <div class="project-info">
+            <div class="project-info-heading">
+              <p style="text-decoration: underline;">
+                <b>Vruddhi Foundation</b>
+              </p>
+            </div>
+            <p style="font-size:0.6em; ">
+              This is a responsive static website developed for the Vruddhi NGO using bootstrap the framework. Check out their site.
+              <a href="https://spramod49.github.io/Vruddhi-Foundation-NGO-/" target="_blank">here</a>
+            </p>
+          </div>
+          <div class="project-card-image">
+            <img src="./images/vruddhi.jpg" alt="Vruddhi Foundation">
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-info">
+            <div class="project-info-heading">
+              <p style="text-decoration: underline;">
+                <b>Yelpcamp</b>
+              </p>
+            </div>
+            <p style="font-size:0.6em; ">
+              This is a self project which is for users to add campgrounds/Playgrounds and comment about them, the web application uses
+              the RESTful convention and is powered by nodejs and mongoDB, the database is hosted at mlab. It uses passport.js
+              for authentication. It is hosted on heroku. The site can be found
+              <a href="https://enigmatic-tundra-30791.herokuapp.com" target="_blank">here</a> and the source code
+              <a href="https://github.com/spramod49/YelpCamp" target="_blank">here</a>.
+            </p>
+          </div>
+          <div class="project-card-image">
+            <img src="./images/yelpcamp.png" alt="Yelpcamp">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <div class="project-info-heading">
+            <p style="text-decoration: underline;">
+              <b>Blog App</b>
+            </p>
+          </div>
+          <p style="font-size:0.6em; ">
+            This is a self project for the purpose of practicing RESTful convention where any site visitors can add and edit their blogs.The
+            Web Stack consists of mongoDB, nodeJS and EJS for templating. Project source code can be found
+            <a href="https://github.com/spramod49/blogapp" target="_blank">here</a>.
+          </p>
+        </div>
+        <div class="project-card-image">
+          <img src="./images/blogapp.png" alt="Blog App">
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <div class="project-info-heading">
+            <p style="text-decoration: underline;">
+              <b>Color Game App</b>
+            </p>
+          </div>
+          <p style="font-size:0.6em; ">
+            This is game where the browsers will give an rgb value and we have to guess/answer the right color out of the options, this
+            is a purely front-end project, using only HTML,CSS and vanilla JS. Check out the site
+            <a href="https://spramod49.github.io/colorgame/" target="_blank"> here</a>.
+          </p>
+        </div>
+        <div class="project-card-image">
+          <img src="./images/colorgame.png" alt="Color game app">
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <div class="project-info-heading">
+            <p style="text-decoration: underline;">
+              <b>ToDo List App</b>
+            </p>
+          </div>
+          <p style="font-size:0.6em; ">
+            This is To-Do applcation, the web application is front end based using JQuery. Check out the web mini project
+            <a href="https://spramod49.github.io/todo-app/" target="_blank"> here</a>.
+          </p>
+        </div>
+        <div class="project-card-image">
+          <img src="./images/todo.png" alt="ToDo List app">
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="about-me">
+      <p style="text-decoration: underline;">Contact Me</p>
+      <form onclick="formSubmit(event);" method="post">
+        <input type="text" name="name" id="name" placeholder="Name">
+
+        <input type="text" name="email" id="email" placeholder="Email id">
+
+        <input type="text" name="phone" id="phone" placeholder="Phone number (Optional)">
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+        <button type="submit">Send</button>
+        <p style="font-size: 0.5em;">
+          <i>Swing by for a cup of coffee if you have anything in mind!</i>
+        </p>
+        <div class="container contact-footer">
+          <a href="https://www.facebook.com/spramod49" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pramod-rao-738163b5/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </form>
+
+    </div>
+    <div class="footer">
+      <p style="margin:0;">Built purely on HTML,CSS and vanilla JS only, designed by Pramod Rao(spramod49@gmail.com)</p>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
